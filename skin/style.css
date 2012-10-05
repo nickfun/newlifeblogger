@@ -1,0 +1,237 @@
+img { border: 0px }
+
+fieldset.comment {
+	padding: 1em;
+	margin-top: 1em;
+	border: 1px solid black;
+}
+
+legend.comment {
+	font-color: blue;
+}
+
+span.news_subject {
+    font-family: Georgia;
+    font-size: 20;
+    color: #FFA500;
+    font-weight: bold;
+}
+
+span.news_extra {
+    font-family: Georgia;
+    font-size: 14;
+    color: darkblue;
+}
+
+BODY {
+	COLOR: Black;
+	BACKGROUND-COLOR: #D3DEE4;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: left;
+	MARGIN:5px; 
+	PADDING:0px;
+}
+
+.bg{
+	BACKGROUND-COLOR: #718E9D;
+}
+
+a:link, a:visited, a:active {
+  	FONT-FAMILY: Verdana, Arial, Sans-Serif;
+  	TEXT-DECORATION: underline;
+  	COLOR: #537BB6;
+ 	BACKGROUND: transparent;
+
+}
+
+a:hover {
+  	FONT-FAMILY: Verdana, Arial, Sans-Serif;
+  	TEXT-DECORATION: underline;
+  	COLOR: #CC0000;
+  	BACKGROUND: transparent;
+}
+
+a.b {
+	FONT-FAMILY: Verdana, Arial, Sans-Serif;
+  	TEXT-DECORATION: underline;
+  	COLOR: #000000;
+  	BACKGROUND: transparent;
+}
+
+a.copyright:link, a.copyright:visited, a.copyright:active {
+  	TEXT-DECORATION: none;
+  	FONT-WEIGHT: normal;
+  	COLOR: #00008B;
+  	BACKGROUND: transparent;
+}
+
+a.copyright:hover {
+  	TEXT-DECORATION: none;
+  	FONT-WEIGHT: normal;
+  	COLOR: #537BB6;
+  	BACKGROUND: transparent;
+}
+
+a.menubar:link, a.menubar:visited, a.menubar:active {
+  	FONT-FAMILY: Verdana, Arial, Sans-Serif;
+  	TEXT-DECORATION: none;
+  	COLOR: #537BB6;
+ 	BACKGROUND: transparent;
+	FONT-SIZE: 11px;
+
+}
+
+a.menubar:hover {
+  	FONT-FAMILY: Verdana, Arial, Sans-Serif;
+  	TEXT-DECORATION: none;
+  	COLOR: #CC0000;
+  	BACKGROUND: transparent;
+	FONT-SIZE: 11px;
+
+}
+
+.menubar{
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #5C6466;
+	TEXT-DECORATION: none;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: left;
+}
+.conarea{
+	COLOR: Black;
+	BACKGROUND-COLOR: White;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: left;
+}
+.mltop{
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #7C98A6;
+	TEXT-DECORATION: none;
+	FONT-WEIGHT: bold;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: center;
+	BORDER: 1px solid #000000;
+	BORDER-LEFT: 0px;
+	BORDER-RIGHT: 0px;
+	WIDTH: 100%;
+}
+.ml{
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	TEXT-ALIGN: left;
+	BORDER: 1px solid #000000;
+	BORDER-LEFT: 0px;
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	PADDING-left: 10px;
+	WIDTH: 100%;
+}
+
+.content{
+	PADDING-left: 15px;
+	PADDING-right: 15px;
+	BACKGROUND-COLOR: #FFFFFF;
+	TEXT-ALIGN: left;
+	FONT-SIZE: 12px;
+}
+
+div.error {
+	PADDING: 1em;
+	margin: 1em;
+	BACKGROUND-COLOR: #eeeeee;
+	border: 1px solid black;
+	TEXT-ALIGN: left;
+	FONT-SIZE: 12px;
+}
+
+.copyright {
+	FONT-FAMILY: Verdana, Arial, Sans-Serif;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 10px;
+	COLOR: #00008B;
+	BACKGROUND: transparent;
+}
+
+
+.title {
+	COLOR: #00008B;
+	TEXT-ALIGN: left;
+	FONT-SIZE: 20pt;
+	FONT-FAMILY: Georgia, Verdana, arial, helvetica, serif;
+}
+
+
+TABLE { 
+	FONT-SIZE: 10px; 
+	COLOR: #000000; 
+	FONT-FAMILY: Verdana, arial, helvetica, serif;
+	PADDING: 0;
+}
+
+table.nlb_table { 
+	FONT-SIZE: 11px; 
+	COLOR: #000000; 
+	FONT-FAMILY: Verdana, arial, helvetica, serif;
+	PADDING: 3px;
+	margin: 2px;
+	border: 2px dotted #7C98A6;
+	width: 98%;
+}
+
+table.nlb_table td {
+	padding: 3px;
+}
+
+table.nlb_table th {
+	background-color: #7C98A6;
+	font-weight: bold;
+	font-color: #000000;
+	padding: 3px;
+}
+/*
+input, textarea, select {	
+	BACKGROUND-COLOR: #7C98A6;
+	BORDER: 1px solid #000000;
+	COLOR: #000000;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	FONT-SIZE: 10px;
+}
+*/
+input, textarea, select { 
+	border: 1px solid black;
+	background-color: #D3DEE4;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	FONT-SIZE: 10px;
+}
+textarea {
+	width: 350px;
+	height: 200px;
+}
+
+.news_add_comment {
+	border: 1px solid black;
+	font-color: #000000;
+	background-color: #ffffff;
+}
+
+textarea.news_add_comment {
+	width: 300px;
+	height: 125px;
+}
+
+textarea.nlb_edit_template {
+	font-family: courier new;
+	font-size: 12px;
+	width: 500;
+}
+
+.nlb_config_input {
+	width: 400px;
+	background-color: #D3DEE4;
+}

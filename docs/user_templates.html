@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel=STYLESHEET type="text/css" href="style.css" />
+		<title>NLB: User Templates</title>
+	</head>
+
+	<body>
+		<h1 id="Header">&raquo;User Templates</h1>
+		<div class="Content">
+			
+			<h2 class="first">Overview</h2>
+			<p>
+				Users are now allowed 3 templates to edit. They are:
+		
+				<ol>
+					<li>Blog Template</li>
+					<li>Friends Template</li>
+					<li>Profile Template</li>
+				</ol>
+	
+				Each controls a different aspect of the users template. There is little
+				difference between the Blog template and the Friends template. All three
+				do share some common tags.
+			</p>
+			<p>
+				NLB 3's templates are powered by ETS (<a href="http://ets.sf.net" target="_blank">Easy 
+				Template System</a>). Every user template is called by the <tt>{safe}</tt> 
+				function. This means that users may not use the <tt>{php}</tt> or <tt>{if: }</tt> 
+				features of ETS. They are disabled for security reasons.
+			</p>
+			
+			<h2>About Tags & Masks</h2>
+			<p>
+				Those of you familiar with the template syntax of NLB 2, there is nothing
+				different in version 3.
+			</p>
+			<p>
+				The basic tag has this syntax: <i><tt>{tag}</tt></i>. An example tag is <tt>{username}</tt>.
+				You can put this tag in your template and it will be replaced with your
+				username.
+			</p>
+			<p>
+				Masks are how ETS loops throug tags. A common mask looks like this:
+			</p>
+			<pre>
+{mask:blog}
+...
+{tag}
+...
+{/mask}		</pre>
+			<p>
+				<tt>{mask:blog}</tt> contains your blogs. As your blogs are printed out, <tt>{tag}</tt> will
+				be replaced with the value for that specific blog in the loop.
+			</p>
+				
+
+		</div>
+		
+		<h1 id="Header">&raquo;Common Tags</h1>
+		<div class="Content">
+			<p>
+				These tags exist in all three template files.
+				Tags marked with a * may not always have a value.
+				<table>
+					<tr>
+						<th width="30%">Tag</th>
+						<th width="70%">Value</th>
+					</tr>
+					<tr>
+						<td><tt>{username}</tt></td>
+						<td>Username of template owner</td>
+					</tr>
+					<tr>
+						<td><tt>{url_home}</tt></td>
+						<td>URL to users blog page. Use with &lt;a></td>
+					</tr>
+					<tr>
+						<td><tt>{url_profile}</tt></td>
+						<td>URL to users profile page.</td>
+					</tr>
+					<tr>
+						<td><tt>{url_friends}</tt></td>
+						<td>URL to users friends page.</td>
+					</tr>
+					<tr>
+						<td><tt>{rss_url}</tt></td>
+						<td>URL to users RSS feed.</td>
+					</tr>
+					<tr>
+						<td><tt>{rss_img}</tt></td>
+						<td>A click-able image to users RSS feed
+					</tr>
+					<tr>
+						<td><tt>{avatar}</tt> *</td>
+						<td>A &lt;img> tag that displays users avatar.
+					</tr>
+					<tr>
+						<td><tt>{avatar_url}</tt> *</td>
+						<td>URL to users avatar</td>
+					</tr>
+					<tr>
+						<td><tt>{url_page_next}</tt> *</td>
+						<td>URL to next page of blogs (blogs & friends template only)</td>
+					</tr>
+					<tr>
+						<td><tt>{url_page_prev}</tt> *</td>
+						<td>URL to the previous page of blogs (blog & friends template only)</td>
+					</tr>
+				</table>
+			</p>
+		</div>
+		
+		<h1 id="Header">&raquo;Blog Template</h1>
+		<div class="Content">
+			<h2>Mask: Blog</h2>
+			<p>
+				These tags are to be used with <tt>{mask:blog}</tt>. Tags with 
+				a * may not always have a value.
+				<table>
+					<tr>
+						<th>Tag</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><tt>{subject}</tt> *</td>
+						<td>The subject of the blog</td>
+					</tr>
+					<tr>
+						<td><tt>{date}</tt></td>
+						<td>Date and time blog was posted</td>
+					</tr>
+					<tr>
+						<td><tt>{body}</tt></td>
+						<td>The body of the blog</td>
+					</tr>
+					<tr>
+						<td><tt>{mood}</tt> *</td>
+						<td>The mood of the user</td>
+					</tr>
+					<tr>
+						<td><tt>{custom_title}</tt> *</td>
+						<td>The name of the custom field chosen by the user</td>
+					</tr>
+					<tr>
+						<td><tt>{custom_text}</tt> *</td>
+						<td>Value for custom field</td>
+					</tr>
+					<tr>
+						<td><tt>{comments}</tt></td>
+						<td>If <tt>{comments}</tt> has a value, then this user allows the public
+						to post comments</td>
+					</tr>
+					<tr>
+						<td><tt>{comments_url}</tt></td>
+						<td>URL to view/post comments for this blog</td>
+					</tr>
+					<tr>
+						<td><tt>{comment_num}</tt></td>
+						<td>The number of comments</td>
+					</tr>
+					<tr>
+						<td><tt>{author}</tt></td>
+						<td>Author of blog</td>
+					</tr>
+					<tr>
+						<td><tt>{author_url_profile}</tt></td>
+						<td>URL to authors profile</td>
+					</tr>
+					<tr>
+						<td><tt>{author_url_blogs}</tt></td>
+						<td>URL to authors blog page</td>
+					</tr>
+				</table>
+			</p>
+			
+			<h2>Mask: list_comments</h2>
+			<p>
+				Tags inside <tt>{mask:list_comments}</tt>. <br />
+				<b>Imporant:</b> use <tt>{set:view_comments}</tt> to see if comments
+				need to be displayed.
+				
+				<table>
+					<tr>
+						<th>Tag</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><tt>{author}</tt></td>
+						<td>Username of the author of the blog</td>
+					</tr>
+					<tr>
+						<td><tt>{guest}</tt></td>
+						<td>Use this with <tt>{set}</tt> to decide if this is an Anonymous comment.</td>
+					</tr>
+					<tr>
+						<td><tt>{author_url_blog}</tt> *</td>
+						<td>URL to the authors blogs</td>
+					</tr>
+					<tr>
+						<td><tt>{author_url_profile}</tt> *</td>
+						<td>URL to the authors profile</td>
+					</tr>
+					<tr>
+						<td><tt>{body}</tt></td>
+						<td>Comment body</td>
+					</tr>
+					<tr>
+						<td><tt>{avatar_url}</tt> *</td>
+						<td>URL to comment authors avatar, if one is set</td>
+					</tr>
+					<tr>
+						<td><tt>{avatar}</tt> *</td>
+						<td>A &lt;img> tag that dispays authors avatar, if one is set</td>
+					</tr>
+				</table>
+		</div>
+		
+		<h1 id="Header">&raquo;Friends Template</h1>
+		<div class="Content">
+			<h2>Mask: Blog</h2>
+			<p>
+				Tags used in <tt>{mask:blog}</tt> are identical to those
+				in the normal blog template.
+			</p>
+			<h2>Mask: friend_list</h2>
+			<p>
+				<tt>{mask:friends_list}</tt> will let you display a list of your friends.
+				<table>
+					<tr>
+						<th>Tag</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><tt>{name}</tt></td>
+						<td>Username of friend</td>
+					</tr>
+					<tr>
+						<td><tt>{url_blogs}</tt></td>
+						<td>URL to friends blogs</td>
+					</tr>
+					<tr>
+						<td><tt>{url_profile}</tt></td>
+						<td>URL to friends profile</td>
+					</tr>
+				</table>
+			</p>
+		</div>
+				
+
+		<div align="center">
+			<a href="http://www.sevengraff.com" target="_blank">&copy 2004 
+			Sevengraff</a> <br />
+			<a href="credits.html">Credits</a>
+		</div>
+	
+	</body>
+</html>

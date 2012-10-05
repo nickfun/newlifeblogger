@@ -1,0 +1,16 @@
+ACCESS OPTIONS:
+
+blog		Post/edit own blogs
+comment		Post comments on blogs
+av_use		use standard avatars
+av_up		upload custom avatars
+friends		keep a friends list
+admin		Post news, edit blogs/news/comments that you are not the author of
+tpl_change	Change to pre-defined template
+tpl_custom	Edit template
+
+Should appear in the MySQL database like so:
+
+blog:comment:av_use:av_up:friends:tpl_change:tpl_custom
+
+using : as a delimiter
