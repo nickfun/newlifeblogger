@@ -4,7 +4,7 @@ NewLife Blogger
 About
 -----
 
-Hello I am [Nick](http://nick.gs) and I made this thing. Newlife Blogger was a project I made 
+Hello I am Nick and I made this thing. Newlife Blogger was a project I made 
 many years ago as a hobby. A friend of mine wanted to offer blogging service
 to his online community, and asked me to setup something. I was going to 
 just use livejournal as it is an open source project, but LJ is a huge system
@@ -21,7 +21,7 @@ gaming community that had about 3000 users.
 Tech Used
 ---------
 
-The biggest outside library that I used was the [ETS template system](http://ets.sourceforge.net/). While not
+The biggest outside library that I used was the ETS template system. While not
 the fastest template system it had some cool features that I needed. Also, I 
 really liked its "mask" system. You could divide up the template into logical 
 parts from the developers side and from the designers side. Also, I think I was
