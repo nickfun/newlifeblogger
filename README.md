@@ -33,3 +33,7 @@ Within the system I wrote several classes to handle core ideas in NLB, such
 as blogs, users, email, and database connections/queries. At the time I thought
 I was pretty hot because I was doing it OOP style. I didn't realize that I was
 basically writing models and following MVC in an unenforced way. 
+
+If you looking through the code and think that the techniques look like an
+amature, that is because I was at the time. Also, the code was written to work 
+on PHP 4.x since this was way before version 5 came out.
